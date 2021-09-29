@@ -1,11 +1,16 @@
 # Chessman-Dataset---Images-Classification
 
-* 5 Star *
+1. Build and Train
 
-- Dataset is divided into train set and validation set
-- Augmentation = rescale, rotation_range, horizontal_flip, vertical_flip, shear_range, fill_mode
-- Data Generator
-- Model Sequential (Conv2D, MaxPooling2D, Flatten, Dense
-- Training time <= 30 minutes
-- Accuracy >= 97%
-- Callback Method
+- ImageDataGenerator: rescale, rotation_range, zoom_range, shear_range, fill_mode, validation_split
+- Sequential Model: Conv2D, MaxPooling2D, Dropout, Flatten, Dense
+- Class = 5
+- Optimizer = adam
+- Accuracy = 85% - 50%
+
+2. Transfer Learning
+
+- ImageDataGenerator
+- Sequential Model: ResNet15V2("imagenet"), Flatten, Dense
+- Optimizer = adam
+- Accuracy = 95% - 78%
